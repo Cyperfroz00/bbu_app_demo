@@ -209,7 +209,9 @@ class _MyAppState extends State<MyApp> {
                     "Version 21.0.0",
                     style: TextStyle(color: Colors.indigo),
                   ),
-                  SizedBox(height: 5,)
+                  SizedBox(
+                    height: 5,
+                  )
                 ],
               ),
             ],
@@ -263,11 +265,17 @@ class _MyAppState extends State<MyApp> {
               Container(
                 height: 250,
                 color: Colors.indigo,
-                child: const Row(
+                child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Text("Image1"),
-                    Text("Image2"),
+                    Image.asset(
+                      'assets/images/profile.jpg',
+                      width: 190.9,
+                    ),
+                    Image.asset(
+                      'assets/images/profile.jpg',
+                      width: 190.9,
+                    ),
                   ],
                 ),
               ),
