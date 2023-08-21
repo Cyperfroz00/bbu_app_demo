@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
@@ -36,21 +35,21 @@ class _MyAppState extends State<MyApp> {
                     padding: EdgeInsets.all(1.0),
                     child: Text(
                       "PEN PONLOK",
-                      style: TextStyle(color: Colors.indigo),
+                      style: TextStyle(color: Colors.indigo,fontWeight: FontWeight.bold),
                     ),
                   ),
                   const Padding(
                     padding: EdgeInsets.all(1.0),
                     child: Text(
                       "095509990",
-                      style: TextStyle(color: Colors.indigo),
+                      style: TextStyle(color: Colors.indigo,fontWeight: FontWeight.bold),
                     ),
                   ),
                   const Padding(
                     padding: EdgeInsets.all(1),
                     child: Text(
                       "ID : PP35235",
-                      style: TextStyle(color: Colors.indigo),
+                      style: TextStyle(color: Colors.indigo,fontWeight: FontWeight.bold),
                     ),
                   ),
                 ],
@@ -264,7 +263,7 @@ class _MyAppState extends State<MyApp> {
               ),
               Container(
                 height: 250,
-                color: Colors.indigo,
+                color: Colors.indigo[500],
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
@@ -292,16 +291,9 @@ class _MyAppState extends State<MyApp> {
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                 ),
               ),
-              Container(
+             Container(
                 height: 250,
-                color: Colors.indigo,
-                child: const Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    Text("Image1"),
-                    Text("Image2"),
-                  ],
-                ),
+                color: Colors.grey[500],
               ),
               const SizedBox(
                 height: 5,
