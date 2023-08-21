@@ -32,8 +32,8 @@ class _MyAppState extends State<MyApp> {
                     Container(
                       child: Image.asset(
                         'assets/images/profile.jpg',
-                        width: 50,
-                        height: 50,
+                        width: 90,
+                        height: 90,
                       ),
                     ),
                     Padding(
