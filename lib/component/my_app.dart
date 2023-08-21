@@ -26,35 +26,34 @@ class _MyAppState extends State<MyApp> {
           child: ListView(
             children: [
               Container(
-                height: 150,
+                //height: 150,
                 child: Column(
                   children: [
                     Container(
-                      width: 80,
-                      height: 80,
-                      decoration: BoxDecoration(
-                        color: Colors.indigo,
-                        borderRadius: BorderRadius.all(Radius.circular(50)),
+                      child: Image.asset(
+                        'assets/images/profile.jpg',
+                        width: 50,
+                        height: 50,
                       ),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(1.0),
                       child: Text(
-                        "Student ID : PP35235",
+                        "PEN PONLOK",
                         style: TextStyle(color: Colors.indigo),
                       ),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(1.0),
                       child: Text(
-                        "Student ID : PP35235",
+                        "095509990",
                         style: TextStyle(color: Colors.indigo),
                       ),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(1),
                       child: Text(
-                        "Student ID : PP35235",
+                        "ID : PP35235",
                         style: TextStyle(color: Colors.indigo),
                       ),
                     ),
@@ -117,91 +116,91 @@ class _MyAppState extends State<MyApp> {
               ),
               ListTile(
                 leading: Icon(
-                  Icons.contact_mail_outlined,
+                  Icons.branding_watermark,
                   color: Colors.indigo,
                 ),
                 title: Text(
-                  "Contact",
+                  "Campus",
                   style: TextStyle(color: Colors.indigo),
                 ),
               ),
               ListTile(
                 leading: Icon(
-                  Icons.contact_mail_outlined,
+                  Icons.app_registration,
                   color: Colors.indigo,
                 ),
                 title: Text(
-                  "Contact",
+                  "Apply",
                   style: TextStyle(color: Colors.indigo),
                 ),
               ),
               ListTile(
                 leading: Icon(
-                  Icons.contact_mail_outlined,
+                  Icons.location_pin,
                   color: Colors.indigo,
                 ),
                 title: Text(
-                  "Contact",
+                  "Location",
                   style: TextStyle(color: Colors.indigo),
                 ),
               ),
               ListTile(
                 leading: Icon(
-                  Icons.contact_mail_outlined,
+                  Icons.message,
                   color: Colors.indigo,
                 ),
                 title: Text(
-                  "Contact",
+                  "FAQ",
                   style: TextStyle(color: Colors.indigo),
                 ),
               ),
               ListTile(
                 leading: Icon(
-                  Icons.contact_mail_outlined,
+                  Icons.school,
                   color: Colors.indigo,
                 ),
                 title: Text(
-                  "Contact",
+                  "Scholarship",
                   style: TextStyle(color: Colors.indigo),
                 ),
               ),
               ListTile(
                 leading: Icon(
-                  Icons.contact_mail_outlined,
+                  Icons.video_collection,
                   color: Colors.indigo,
                 ),
                 title: Text(
-                  "Contact",
+                  "Videos",
                   style: TextStyle(color: Colors.indigo),
                 ),
               ),
               ListTile(
                 leading: Icon(
-                  Icons.contact_mail_outlined,
+                  Icons.person,
                   color: Colors.indigo,
                 ),
                 title: Text(
-                  "Contact",
+                  "Profile",
                   style: TextStyle(color: Colors.indigo),
                 ),
               ),
               ListTile(
                 leading: Icon(
-                  Icons.contact_mail_outlined,
-                  color: Colors.indigo,
+                  Icons.logout,
+                  color: Colors.red,
                 ),
                 title: Text(
-                  "Contact",
+                  "Logout",
                   style: TextStyle(color: Colors.indigo),
                 ),
               ),
               ListTile(
                 leading: Icon(
-                  Icons.contact_mail_outlined,
+                  Icons.info_outline,
                   color: Colors.indigo,
                 ),
                 title: Text(
-                  "Contact",
+                  "About US",
                   style: TextStyle(color: Colors.indigo),
                 ),
               ),
