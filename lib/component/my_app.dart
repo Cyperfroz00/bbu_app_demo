@@ -213,15 +213,15 @@ class _MyAppState extends State<MyApp> {
           child: ListView(
             children: [
               Container(
-                height: 150,
+                height: 300,
                 color: Colors.indigo,
               ),
               SizedBox(
-                height: 5,
+                height: 20,
               ),
               Container(
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(20)),
+                  borderRadius: BorderRadius.all(Radius.circular(15)),
                   color: Colors.indigo[50],
                 ),
                 height: 150,
@@ -236,6 +236,30 @@ class _MyAppState extends State<MyApp> {
                 ),
                 child: Text(
                   "Sample Certificate",
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                ),
+              ),
+              Container(
+                height: 250,
+                color: Colors.indigo,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Text("Image1"),
+                    Text("Image2"),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 5,
+              ),
+              Padding(
+                padding: const EdgeInsets.only(
+                  top: 20,
+                  bottom: 10,
+                ),
+                child: Text(
+                  "Slide Show",
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                 ),
               ),
