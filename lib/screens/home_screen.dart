@@ -14,20 +14,16 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.indigo,
-        title: const Text('BUILD BRIGHT UNIVERSITY'),
+        title: Text('BUILD BRIGHT UNIVERSITY'),
         actions: [
           IconButton(onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => const ChangeLanguageScreen()),
-            );
-          },icon:Icon(Icons.notifications)),
-          IconButton(onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => const ChangeLanguageScreen()),
-            );
-          }, icon:  Icon(Icons.language)),
+
+          }, icon: Icon(Icons.notifications)),
+          IconButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> ChangeLanguageScreen()));
+              },
+              icon: Icon(Icons.language)),
         ],
       ),
       drawer: Drawer(
