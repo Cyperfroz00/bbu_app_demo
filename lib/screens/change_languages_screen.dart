@@ -1,4 +1,5 @@
 import 'package:bbu_app_demo/screens/home_screen.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 class ChangeLanguageScreen extends StatefulWidget {
@@ -12,7 +13,7 @@ class _ChangeLanguageScreenState extends State<ChangeLanguageScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Changes Language"),
+        title:Text("change_language".tr()),
       ),
       body: Container(
         child: ListView(
