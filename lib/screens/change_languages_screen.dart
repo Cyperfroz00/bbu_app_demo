@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class ChangeLanguageScreen extends StatefulWidget {
 
-  final title;
+  String title;
   ChangeLanguageScreen({super.key,required this.title});
 
   @override
@@ -31,6 +31,12 @@ class _ChangeLanguageScreenState extends State<ChangeLanguageScreen> {
               child: ListTile(
                 onTap: (){
                   context.setLocale(Locale('km','KM'));
+                  Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => HomeScreen(
+                              title: '',
+                            )));
                 },
                 leading: Image.asset('assets/images/kmlogo.jpg'),
                 title: Text("KHMER"),
@@ -50,6 +56,12 @@ class _ChangeLanguageScreenState extends State<ChangeLanguageScreen> {
               child: ListTile(
                 onTap: (){
                   context.setLocale(Locale('en','EN'));
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => HomeScreen(
+                            title: '',
+                          )));
                 },
                 leading: Image.asset('assets/images/enlogo.jpg'),
                 title: Text("ENGLISH"),

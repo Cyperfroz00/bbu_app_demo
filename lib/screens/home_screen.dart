@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
   final title;
-  const HomeScreen({super.key,required this.title});
+  const HomeScreen({super.key, required this.title});
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
@@ -18,8 +18,14 @@ class _HomeScreenState extends State<HomeScreen> {
         title: Text('BUILD BRIGHT UNIVERSITY'.tr()),
         actions: [
           IconButton(onPressed: () {}, icon: Icon(Icons.notifications)),
-          IconButton(onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context)=> ChangeLanguageScreen(title: '',)));
+          IconButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => ChangeLanguageScreen(
+                              title: '',
+                            )));
               },
               icon: Icon(Icons.language)),
         ],
@@ -76,7 +82,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             ListTile(
-              leading:  Icon(
+              leading: Icon(
                 Icons.manage_history,
                 color: Colors.indigo,
               ),
@@ -85,7 +91,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 style: TextStyle(color: Colors.indigo),
               ),
             ),
-             ListTile(
+            ListTile(
               leading: Icon(
                 Icons.event_note,
                 color: Colors.indigo,
@@ -105,7 +111,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 style: TextStyle(color: Colors.indigo),
               ),
             ),
-             ListTile(
+            ListTile(
               leading: Icon(
                 Icons.contact_mail_outlined,
                 color: Colors.indigo,
@@ -115,7 +121,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 style: TextStyle(color: Colors.indigo),
               ),
             ),
-             ListTile(
+            ListTile(
               leading: Icon(
                 Icons.branding_watermark,
                 color: Colors.indigo,
@@ -125,7 +131,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 style: TextStyle(color: Colors.indigo),
               ),
             ),
-             ListTile(
+            ListTile(
               leading: Icon(
                 Icons.app_registration,
                 color: Colors.indigo,
@@ -135,7 +141,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 style: TextStyle(color: Colors.indigo),
               ),
             ),
-             ListTile(
+            ListTile(
               leading: Icon(
                 Icons.location_pin,
                 color: Colors.indigo,
@@ -145,7 +151,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 style: TextStyle(color: Colors.indigo),
               ),
             ),
-             ListTile(
+            ListTile(
               leading: Icon(
                 Icons.message,
                 color: Colors.indigo,
@@ -155,7 +161,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 style: TextStyle(color: Colors.indigo),
               ),
             ),
-             ListTile(
+            ListTile(
               leading: Icon(
                 Icons.school,
                 color: Colors.indigo,
@@ -165,7 +171,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 style: TextStyle(color: Colors.indigo),
               ),
             ),
-             ListTile(
+            ListTile(
               leading: Icon(
                 Icons.video_collection,
                 color: Colors.indigo,
@@ -175,7 +181,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 style: TextStyle(color: Colors.indigo),
               ),
             ),
-             ListTile(
+            ListTile(
               leading: Icon(
                 Icons.person,
                 color: Colors.indigo,
@@ -185,7 +191,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 style: TextStyle(color: Colors.indigo),
               ),
             ),
-             ListTile(
+            ListTile(
               leading: Icon(
                 Icons.logout,
                 color: Colors.red,
@@ -205,7 +211,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 style: TextStyle(color: Colors.indigo),
               ),
             ),
-             Column(
+            Column(
               children: [
                 Text(
                   "Develop by TeamBBU".tr(),
@@ -242,7 +248,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               child: Text(
                 "certificate format".tr(),
-                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               ),
             ),
             const SizedBox(
