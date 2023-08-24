@@ -3,12 +3,15 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 class ChangeLanguageScreen extends StatefulWidget {
-  const ChangeLanguageScreen({super.key});
+
+  final title;
+  ChangeLanguageScreen({super.key,required this.title});
+
   @override
   State<ChangeLanguageScreen> createState() => _ChangeLanguageScreenState();
 }
-
 class _ChangeLanguageScreenState extends State<ChangeLanguageScreen> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,12 +29,15 @@ class _ChangeLanguageScreenState extends State<ChangeLanguageScreen> {
                 color: Colors.black.withOpacity(.05),
               ),
               child: ListTile(
+                onTap: (){
+                  context.setLocale(Locale('km','KM'));
+                },
                 leading: Image.asset('assets/images/kmlogo.jpg'),
                 title: Text("KHMER"),
-                trailing: Icon(
+                trailing: context.locale.toString() == "km_KM" ? Icon(
                   Icons.check_circle,
                   color: Colors.indigo,
-                ),
+                ):Text(""),
               ),
             ),
             Container(
@@ -42,14 +48,18 @@ class _ChangeLanguageScreenState extends State<ChangeLanguageScreen> {
                 color: Colors.black.withOpacity(.03),
               ),
               child: ListTile(
+                onTap: (){
+                  context.setLocale(Locale('en','EN'));
+                },
                 leading: Image.asset('assets/images/enlogo.jpg'),
                 title: Text("ENGLISH"),
-                trailing: Icon(
+                trailing: context.locale.toString() == "en_EN" ? Icon(
                   Icons.check_circle,
                   color: Colors.indigo,
-                ),
+                ) :Text(""),
               ),
             ),
+
           ],
         ),
       ),

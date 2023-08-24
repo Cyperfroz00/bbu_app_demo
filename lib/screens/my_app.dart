@@ -16,7 +16,7 @@ class _MyAppState extends State<MyApp> {
       supportedLocales: context.supportedLocales,
       locale: context.locale,
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: HomeScreen(title: null,),
     );
   }
 }
