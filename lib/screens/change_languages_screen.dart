@@ -19,9 +19,11 @@ class _ChangeLanguageScreenState extends State<ChangeLanguageScreen> {
         title:Text("change_language".tr()),
       ),
       body: Container(
+
         child: ListView(
           children: [
             Container(
+
               margin: EdgeInsets.all(10),
               padding: EdgeInsets.all(5),
               decoration: BoxDecoration(
