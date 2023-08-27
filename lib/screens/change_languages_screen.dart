@@ -19,11 +19,9 @@ class _ChangeLanguageScreenState extends State<ChangeLanguageScreen> {
         title:Text("change_language".tr()),
       ),
       body: Container(
-
         child: ListView(
           children: [
             Container(
-
               margin: EdgeInsets.all(10),
               padding: EdgeInsets.all(5),
               decoration: BoxDecoration(
@@ -41,7 +39,7 @@ class _ChangeLanguageScreenState extends State<ChangeLanguageScreen> {
                             )));
                 },
                 leading: Image.asset('assets/images/kmlogo.jpg'),
-                title: Text("KHMER"),
+                title: Text("KHMER").tr(),
                 trailing: context.locale.toString() == "km_KM" ? Icon(
                   Icons.check_circle,
                   color: Colors.indigo,
@@ -66,14 +64,13 @@ class _ChangeLanguageScreenState extends State<ChangeLanguageScreen> {
                           )));
                 },
                 leading: Image.asset('assets/images/enlogo.jpg'),
-                title: Text("ENGLISH"),
+                title: Text("ENGLISH".tr()),
                 trailing: context.locale.toString() == "en_EN" ? Icon(
                   Icons.check_circle,
                   color: Colors.indigo,
                 ) :Text(""),
               ),
             ),
-
           ],
         ),
       ),

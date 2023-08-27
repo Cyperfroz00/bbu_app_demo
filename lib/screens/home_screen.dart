@@ -1,6 +1,9 @@
+import 'package:bbu_app_demo/auth/login_screen.dart';
 import 'package:bbu_app_demo/screens/change_languages_screen.dart';
+import 'package:bbu_app_demo/screens/enrollment_form.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'notification.dart';
 
 class HomeScreen extends StatefulWidget {
   final title;
@@ -8,7 +11,6 @@ class HomeScreen extends StatefulWidget {
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
-
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
@@ -17,7 +19,15 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: Colors.indigo,
         title: Text('BUILD BRIGHT UNIVERSITY'.tr()),
         actions: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.notifications)),
+          IconButton(onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) =>
+                          NotificationBar(
+                            title: '',
+                          )));
+          }, icon: Icon(Icons.notifications)),
           IconButton(
               onPressed: () {
                 Navigator.push(
@@ -28,6 +38,15 @@ class _HomeScreenState extends State<HomeScreen> {
                             )));
               },
               icon: Icon(Icons.language)),
+          IconButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => LoginScreen()
+                        ));
+              },
+              icon: Icon(Icons.login)),
         ],
       ),
       drawer: Drawer(
@@ -72,6 +91,13 @@ class _HomeScreenState extends State<HomeScreen> {
               height: 5,
             ),
             ListTile(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            EnrollmentForm()));
+              },
               leading: Icon(
                 Icons.app_registration,
                 color: Colors.indigo,
@@ -82,6 +108,13 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             ListTile(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            EnrollmentForm()));
+              },
               leading: Icon(
                 Icons.manage_history,
                 color: Colors.indigo,
@@ -92,6 +125,13 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             ListTile(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            EnrollmentForm()));
+              },
               leading: Icon(
                 Icons.event_note,
                 color: Colors.indigo,
@@ -102,6 +142,13 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             ListTile(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            EnrollmentForm()));
+              },
               leading: Icon(
                 Icons.calendar_today_outlined,
                 color: Colors.indigo,
@@ -112,6 +159,13 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             ListTile(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            EnrollmentForm()));
+              },
               leading: Icon(
                 Icons.contact_mail_outlined,
                 color: Colors.indigo,
@@ -122,6 +176,13 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             ListTile(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            EnrollmentForm()));
+              },
               leading: Icon(
                 Icons.branding_watermark,
                 color: Colors.indigo,
@@ -132,6 +193,13 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             ListTile(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            EnrollmentForm()));
+              },
               leading: Icon(
                 Icons.app_registration,
                 color: Colors.indigo,
@@ -142,6 +210,13 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             ListTile(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            EnrollmentForm()));
+              },
               leading: Icon(
                 Icons.location_pin,
                 color: Colors.indigo,
@@ -152,6 +227,13 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             ListTile(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            EnrollmentForm()));
+              },
               leading: Icon(
                 Icons.message,
                 color: Colors.indigo,
@@ -162,6 +244,13 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             ListTile(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            EnrollmentForm()));
+              },
               leading: Icon(
                 Icons.school,
                 color: Colors.indigo,
@@ -172,6 +261,13 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             ListTile(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            EnrollmentForm()));
+              },
               leading: Icon(
                 Icons.video_collection,
                 color: Colors.indigo,
@@ -182,6 +278,13 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             ListTile(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            EnrollmentForm()));
+              },
               leading: Icon(
                 Icons.person,
                 color: Colors.indigo,
@@ -192,6 +295,13 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             ListTile(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            EnrollmentForm()));
+              },
               leading: Icon(
                 Icons.logout,
                 color: Colors.red,
@@ -202,6 +312,13 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             ListTile(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            EnrollmentForm()));
+              },
               leading: Icon(
                 Icons.info_outline,
                 color: Colors.indigo,
@@ -294,8 +411,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Icon(
-                                      Icons.app_registration,
+                                    //IconButton(onPressed: (){}, icon: Icon(Icons.access_time_filled_outlined)),
+                                    Icon( Icons.app_registration,
                                       color: Colors.indigo[500],
                                       size: 25,
                                     ),
@@ -827,7 +944,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               style: TextStyle(fontSize: 10),
                             ),
                             Text(
-                              "H.E Dr. PEN PONLOK",
+                              "H.E Dr. PEN PONLOK".tr(),
                               style: TextStyle(
                                   fontSize: 10,
                                   fontWeight: FontWeight.bold,
@@ -843,11 +960,11 @@ class _HomeScreenState extends State<HomeScreen> {
                               width: 170,
                             ),
                             Text(
-                              "Chairman",
+                              "Chairman".tr(),
                               style: TextStyle(fontSize: 10),
                             ),
                             Text(
-                              "H.E Dr. PEN PONLOK",
+                              "H.E Dr. PEN PONLOK".tr(),
                               style: TextStyle(
                                   fontSize: 10,
                                   fontWeight: FontWeight.bold,
